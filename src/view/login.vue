@@ -5,7 +5,7 @@
         <img src="../assets/logo/logo.png" alt="自动改价" class="logo-img">
         <img src="../assets/logo/font.png" alt="球鞋" class="font-img">
       </div>
-      <div>
+      <div class="ch-box">
         <img src="../assets/logo/ch.png" alt="自动改价" class="ch-img">
       </div>
       <div class="icons">
@@ -36,7 +36,8 @@ export default {};
   display: flex;
   background-image: url(../assets/logo/bg.png);
   img {
-    vertical-align: middle;
+	vertical-align: middle;
+	max-width: 100%;
   }
   .right {
     flex: 0 1 65%;
@@ -44,18 +45,31 @@ export default {};
     padding-left: 138px;
     position: relative;
 
+	.ch-box {
+		height: 74%;
+		display: flex;
+		align-items: center;
+	}
     .logo-img {
       margin-left: 44px;
-      margin-right: 8px;
-    }
+	  margin-right: 8px;
+	  width: calc(100% - 598px);
+	  min-width: 50px;
+	  max-width: 60px;
+	}
+	.font-img {
+	  width: calc(100% - 143px);
+	  max-width: 516px;
+	  min-width: 200px;
+	}
 
     .ch-img {
       margin-top: 40px;
     }
 
     .foonter-img {
-      margin-left: 126px;
-      margin-top: 58px;
+      padding-left: 12%;
+      padding-top: 58px;
     }
   }
 
@@ -70,6 +84,7 @@ export default {};
       background-color: #fff;
       text-align: center;
 	  padding-bottom: 56px;
+	  margin-left: 20px;;
       p {
         color: #45536b;
         font-size: 22px;
