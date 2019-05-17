@@ -3,11 +3,11 @@
 		<div class="header_box">
 			<my_Header></my_Header>
 		</div>
-		<div class="main">
-			<div class="slider_box">
+		<div class="main clearfix">
+			<div class="slider_box fl">
 				<my_Slider></my_Slider>
 			</div>
-			<div class="content">
+			<div class="content fl">
 				<router-view></router-view>
 			</div>
 		</div>
@@ -29,7 +29,6 @@
 		}
 	}
 </script>
-
 <style lang="less">
 	.home {
 		height: 100%;
@@ -37,6 +36,10 @@
 			height: 100%;
 			.slider_box {
 				height: 100%;
+			}
+			.content {
+				width: calc(100% - 220px);
+				padding-left: 26px;
 			}
 		}
 	}

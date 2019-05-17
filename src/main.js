@@ -7,6 +7,7 @@ import store from './store';
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 import axios from 'axios';
+import './common/style/base.css';
 Vue.use(iView);
 Vue.prototype.$http = axios;
 Vue.config.productionTip = false;
