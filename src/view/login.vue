@@ -35,6 +35,8 @@ export default {};
   }
   display: flex;
   background-image: url(../assets/logo/bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
   img {
 	vertical-align: middle;
 	max-width: 100%;
